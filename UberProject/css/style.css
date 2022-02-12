@@ -1,0 +1,311 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    /*-----  позволяет загнать main страницы под шапку */
+    position: relative;
+    height: 50px; /* Липкая навигация */
+    /* position: sticky; */   /* Установка фиксации шапки и хедера при скроле страницы */
+    /* top: 0; */             /* Установка фиксации шапки  и хедера при скроле страницы */
+
+}
+
+html {
+    
+    overflow-x: hidden;
+    overflow-y: scroll; /* Скрывает белые полосы по краям */
+    }
+/* html {
+    position: relative;
+} */
+nav {
+    
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* position: sticky;
+    top: 0; */
+    position: fixed; /* Липкая навигация */
+    width: 100%; /* Липкая навигация */
+    z-index: 2; /* Липкая навигация */
+    height: 50px; 
+    background-color: #212121;
+   
+    
+    /* position: fixed ;
+    left: 0;
+    top: 0; 
+    z-index: 100; */
+}
+
+ul {
+    /* position: sticky;
+    top: 0; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 13px 70px;
+    list-style: none;
+}
+
+.menu .menu_link {
+    text-decoration: none;
+    font-size: 15px;
+    /* line-height: 68px;  Используется для многострочного текста верстки или когда текст строка в высоту занимает больше, чем у нее контента  */
+    font-weight: 300;
+    color: #ffffff;
+}
+.menu .menu_link:hover {
+    text-decoration: underline;
+}
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+.subheader {
+    top: 50px; /* Липкая навигация */
+    position:absolute ; /*-----  позволяет загнать main страницы под шапку */
+    width: 100%;        /* ----- */
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);     /* --- Устанавка alfa канала позвоялет задать прозрачность только фона BG,не изменяя прозрачность элементов */
+    /* background-color: black; opacity: 0.6;  --- Устанавливает прозрачност всего блока и всех элементов находящися в нем */ 
+}
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+.subheader .subheader_off {
+    margin-top: 6px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: 100;
+    color: #ffffff;
+}
+.subheader .subheader_call {
+/* display: flex;
+justify-content: center; */
+margin-top: 17px;
+font-size: 12px;
+font-weight: 300;
+color: #ffffff;
+text-align: right;
+margin-right: 25px;
+}
+.subheader .subheader_tel {
+display: block;
+margin-top: 8px;
+font-size: 22px;
+font-weight: 400;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffffff;
+text-align: right;
+line-height: 13px;
+margin-right: 25px;
+}
+.subheader .subheader_btn {
+margin-top: 16px;
+width: 178px;
+height: 52px;
+background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+border: none;
+border-radius: 15px;
+box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+color: #ffffff;
+}
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.png') center center/cover no-repeat; /* Расположение картинки по осям в центре, затем масштабирует изображение как можно больше с сохранением пропорций и не повторяет  */
+    /* text-align:center; */
+    padding: 150px 0 135px 0;
+    
+}
+.promo .promo_header {
+font-size: 60px;
+font-weight: 900;
+text-transform: uppercase;
+color: #ffffff;
+line-height: 60px;
+margin: 0;
+text-align: center;
+}
+.promo .promo_subheader {
+font-size: 36px;
+line-height: 36px;
+font-weight: 700;
+color: #ffffff;
+text-align: center;
+line-height: 36px;
+margin: 0;
+margin-top: 22px;
+}
+.promo .promo_text {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    /* width: 500px; */
+}
+.promo .promo_text span {
+    margin-left: 48px;
+}
+.promo .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 265px;
+    height: 69px;
+    background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+    font-size: 18px;
+    line-height: 68px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+.advantages {
+    
+    padding: 71px 0 65px 0;
+    min-height: 525px;
+    
+    
+}
+
+.advantages .advantages_btn {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.advantages .advantages_tittle {
+    margin: 44px 0 0 0;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+}
+
+.advantages .advantages_itom {
+    margin: 40px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .advantages_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    /* float: left; */       /*Расположение текста справа от круга   */
+}
+.advantages .advantages_icon {
+    display: flex; /* Является блочным элементом и подвластен margin: 0 auto; */
+    margin: 0 auto;
+}
+.advantages .advantages_descr {
+    margin-left: 26px;
+    width: 390px;
+}
+.advantages .advantages_descr_title {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1eacc7;
+}
+.advantages .advantages_descr_text {
+    text-align: justify; /* Растягивает текс по всей ширине контейнера */
+    word-spacing: -0.3ex; /* Удаляет большие пробелы между слвоами  */
+    font-size: 15px;
+    font-weight: 300;
+    color: #202020;
+    
+} 
+
+
+.advantages .advantages_itom2 {
+    margin: 55px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .advantages_round2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    /* float: left; */       /*Расположение текста справа от круга   */
+}
+.advantages .advantages_itom3 {
+    margin: 80px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .advantages_round3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    /* float: left; */       /*Расположение текста справа от круга   */
+}
+.advantages .advantages_itom4 {
+    margin: 80px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .advantages_round4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    /* float: left; */       /*Расположение текста справа от круга   */
+}
+.advantages .advantages_itom5 {
+    margin: 40px 0 0 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .advantages_round5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 50%;
+    /* float: left; */       /*Расположение текста справа от круга   */
+}
